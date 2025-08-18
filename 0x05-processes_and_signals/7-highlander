@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
-# Displays "I am invincible!!!" when receiving a sigterm signal 
+# Loop forever printing “To infinity and beyond” and trap SIGTERM to loudly declare invincibility
+trap 'printf "I am invincible!!!\n" >&2' SIGTERM
 
-terminate() {
-	echo "I am invincible!!!"
-}
-
-trap terminate SIGTERM
-
-while true
-do
-	echo "To infinity and beyond"
-	sleep 2
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
 done
