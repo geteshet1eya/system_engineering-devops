@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Loop 1 to 10, special messages for 4 and 8 using while + if/elif/else
+i=1
+while [ "$i" -le 10 ]; do
+  if [ "$i" -eq 4 ]; then
+    echo "bad luck"
+  elif [ "$i" -eq 8 ]; then
+    echo "your chance"
+  else
+    echo "$i"
+  fi
+  i=$((i + 1))
+done
