@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Print 1 to 10, say Hi at 9 using while + if
+# Print "Best School" 10 times, say Hi at 9
 i=1
 while [ "$i" -le 10 ]; do
   if [ "$i" -eq 9 ]; then
     echo "Hi"
   else
-    echo "$i"
+    echo "Best School"
   fi
   i=$((i + 1))
 done
