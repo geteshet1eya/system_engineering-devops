@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Print "Best School" 10 times using a for loop
-for i in $(seq 10); do
-  echo "Best School"
+for i in $(seq 1 10); do
+  echo "Best School $i"
 done
