@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-for i in {1..10}; do echo "Best School"; done
+# Print "Best School" 10 times using a for loop
+for i in $(seq 10); do
+  echo "Best School"
+done
