@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script displays every minute from 0:0 to 12:59
-for ((h=0; h<=12; h++)); do
-  for ((m=0; m<=59; m++)); do
+# Print a 12-hour clock HH:MM using nested for loops
+for h in $(seq -w 0 12); do
+  for m in $(seq -w 0 59); do
     echo "$h:$m"
   done
- done
+done
