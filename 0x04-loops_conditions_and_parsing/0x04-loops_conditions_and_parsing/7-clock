@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Prints every minute from 00:00 to 23:59
+for hour in {0..23}; do
+  for minute in {0..59}; do
+    printf "%02d:%02d\n" "$hour" "$minute"
+  done
+done
