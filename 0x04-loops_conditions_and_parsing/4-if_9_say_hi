@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# Print "Best School" 10 times, say Hi at 9
+# Print "Best School" 10 times; say "Hi" after the 9th
 i=1
-while [ "$i" -le 10 ]; do
-  if [ "$i" -eq 9 ]; then
+while [ "$i" -le 11 ]; do
+  if [ "$i" -eq 10 ]; then
     echo "Hi"
-  else
-    echo "Best School"
   fi
+  echo "Best School"
   i=$((i + 1))
 done
