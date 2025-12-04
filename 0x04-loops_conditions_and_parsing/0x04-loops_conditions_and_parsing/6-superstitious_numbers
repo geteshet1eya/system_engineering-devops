@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Prints numbers from 1 to 20 with superstitious rules
+for i in {1..20}; do
+  case $i in
+    4) echo "bad luck" ;;
+    8) echo "your chance" ;;
+    16) echo "good luck" ;;
+    *) echo "$i" ;;
+  esac
+done
