@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Print 1 to 20 with superstitious messages using case
+# Print numbers 1 to 20 with superstitious messages
 i=1
 while [ "$i" -le 20 ]; do
   case "$i" in
@@ -9,7 +9,7 @@ while [ "$i" -le 20 ]; do
     15) echo "bad luck from Italy" ;;
     17) echo "good luck" ;;
     19) echo "bad luck from Ethiopia" ;;
-    *)  echo "$i" ;;
+    *)  echo "Best School" ;;
   esac
   i=$((i + 1))
 done
