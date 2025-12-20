@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Prints numbers from 1 to 20 with special rules
+for i in {1..20}; do
+  if [ $i -eq 4 ]; then
+    echo "bad luck"
+  elif [ $i -eq 8 ]; then
+    echo "your chance"
+  else
+    echo "$i"
+  fi
+done

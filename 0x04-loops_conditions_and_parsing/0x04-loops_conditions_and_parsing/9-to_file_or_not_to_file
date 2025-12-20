@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# A Bash script that checks the status of the file named "school"
+
+while true
+do
+  if [ -f school ]
+  then
+    echo "school file exists"
+  elif [ ! -e school ]
+  then
+    echo "school file doesn't exist"
+  elif [ -d school ]
+  then
+    echo "school is a directory"
+  elif [ ! -s school ]
+  then
+    echo "school file is empty"
+  else
+    echo "school file exists but has content"
+  fi
+  sleep 1
+done

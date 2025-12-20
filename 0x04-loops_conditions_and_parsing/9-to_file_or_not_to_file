@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# A Bash script that checks if a file exists, whether it's regular, empty, or a directory
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: ./9-to_file_or_not_to_file <file>"
+  exit 1
+fi
+
+file="$1"
+
+if [ ! -e "$file" ]; then
+  echo "$file file does not exist"
+else
+  echo "$file file exists"
+
+  if [ -d "$file" ]; then
+    echo "$file file is not empty"
+  elif [ -f "$file" ]; then
+    if [ ! -s "$file" ]; then
+      echo "$file file is empty"
+    else
+      echo "$file file is not empty"
+    fi
+    echo "$file is a regular file"
+  fi
+fi
