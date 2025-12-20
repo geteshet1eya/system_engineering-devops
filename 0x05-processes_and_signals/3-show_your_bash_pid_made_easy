@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays PID and process name of bash processes
+
+ps -ef | grep bash | grep -v grep | awk '{print $2, $NF}'
